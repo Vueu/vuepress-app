@@ -79,4 +79,6 @@ cd ../ && rm -rf dist
 再在 git bash 执行deploy.sh
 
 #### (4) 博客地址
+```
 https://<USERNAME>.github.io
+```
