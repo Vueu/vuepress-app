@@ -1,0 +1,183 @@
+
+// 图标
+.iconfont{
+    font-size: 14.4px !important
+}
+
+// 首页背景
+.home-blog .hero{
+    margin-top:0 !important;
+    height: 8vh !important;
+}
+
+// 分类题目
+.category-item{
+    margin: 5px 8px 5px 0 !important; 
+}
+
+// 调色板
+.navbar .reco-color{
+    font-size: 18px !important
+}
+
+// 个人联系方式
+.social-item{
+    margin: 0 5px 0 0 !important
+    margin:0 auto !important
+}
+.social-item .iconfont{
+    font-size: 25px !important
+}
+
+// 评论输入框
+.veditor{
+    background :#fff !important;
+    min-height:20px !important
+}
+
+
+// 背景音乐
+.reco-bgm-box{
+    bottom:10px !important;
+    height: 50px !important;
+}
+
+// 小屏隐藏音乐盒子
+@media screen and (max-width:720px){
+    .reco-float-box{
+        display: none !important; 
+    }
+}
+
+.reco-bgm-cover{
+    height :50px !important;
+    width: 50px !important
+}
+
+.reco-bgm-info,.reco-bgm-left-box{
+    height :50px !important;
+    font-size: 12px
+}
+
+.reco-bgm-operation{
+    font-size: 10px !important
+}
+
+
+// 侧边栏
+.side-bar .active,.side-bar .active a{
+    background-color:rgb(233, 243, 238)!important
+}
+
+.side-bar .active{
+    // border-right:2px solid #3eaf7c !important
+    border-left:2px solid #3eaf7c !important
+}
+
+// .side-bar .active a:before{
+//     content: '▷  ';
+//     // font-size: 16px
+// }
+
+// .side-bar a:before{
+//     content:"     ";
+//     white-space: pre;
+// }
+
+.side-bar li{
+    // font-size: 14.4px !important
+    border-right:2px solid var(--border-color) !important
+    border-left:2px solid var(--border-color) !important
+    background-color:RGBA(0,0,0,0) !important
+}
+
+.side-bar:hover{
+    transform: scale(1.2) !important
+}
+
+a.sidebar-link{
+    background:RGBA(0,0,0,0) !important
+}
+
+
+
+// 导航栏的下拉框,中屏大屏
+@media screen and (min-width:720px){
+    .nav-dropdown{
+        left:50%;/* 相对根元素定位 */
+        transform:translateX(-50%);/* 左移自身宽度50%，垂直方向也一样 */
+        width : 100px !important
+    }
+}
+
+
+// 置顶标志
+.reco-sticky{
+    font-size: 40px !important
+    color: rgb(234, 135, 78) !important
+}
+
+
+// 弹窗
+.bulletin-wrapper{
+    left:50%;
+    transform:translateX(-50%) translateY(10%);
+    width: 30% !important;
+}
+
+@media screen and (max-width:720px){
+    // 弹窗
+    .bulletin-wrapper{
+        width: 50% !important;
+    }
+}
+
+
+// 个人社交账号
+.social-links .reco-github{
+    color: #24292F  !important 
+}
+
+.social-links .reco-zhihu{
+    color:#0066FF !important
+}
+
+.social-links .reco-wechat{
+    color:rgb(30, 200, 81) !important
+}
+
+.social-links .reco-bilibili{
+    color:#FF66A6 !important
+}
+
+
+// 友情链接弹窗
+.info-wrapper .popup-window{
+    // display: none !important
+    width: 8rem !important;
+}
+
+.info-wrapper .popup-window .logo,.info-wrapper .popup-window .info p{
+    display: none !important
+}
+
+.friend-link-item:hover{
+    transform: scale(1.07)
+}
+
+.abstract-item:hover{
+    transform: scale(1.02);
+}
+
+
+// .line-numbers-wrapper,.line-numbers-mode::after{
+//     width: 1.5rem !important
+// }
+
+blockquote {
+    font-size: 1.2rem !important;
+    color:  black !important;
+    border-left:.25rem solid #3eaf7c !important
+    background-color: rgb(229, 245, 237) !important;
+}
+
