@@ -1,3 +1,4 @@
+<!-- 首页yaml配置 -->
 ---
 home: true
 heroImage: /egg.png
