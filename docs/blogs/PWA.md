@@ -3,13 +3,15 @@ title: 博客兼容PWA
 date: 2022-5-17
 author: Aavin
 categories:
-  - 前端笔记
+  - 博客搭建
 tags:
-  - PWA
+  - 博客优化
 ---
-### PWA
+### PWA 
 
 PWA，英文全称：Progressive Web Apps， 中文翻译：**渐进式 Web 应用**。
+
+💯
 
 引用 MDN 的介绍：
 
@@ -31,7 +33,7 @@ PWA，英文全称：Progressive Web Apps， 中文翻译：**渐进式 Web 应�
 
 我们点击安装后，该页面会自动关闭，然后开启一个应用窗口：
 
-![img](img/2.png)
+![img](./img/2.png)
 
 同时，打开桌面，我们会看到已经添加了微博的图标：
 

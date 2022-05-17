@@ -3,11 +3,10 @@ title: 博客部署
 date: 2021-12-1
 author: Aavin
 categories:
-  - 前端笔记
+  - 博客搭建
 tags:
   - 博客部署
 ---
-
 ### 1.安装依赖
 
 ```
@@ -94,6 +93,8 @@ cd ../ && rm -rf dist
 注释掉 deploy.sh 的 `npm run docs:build`，
 
 再在 git bash 执行 deploy.sh
+
+![img]()
 
 #### (4) 博客地址
 

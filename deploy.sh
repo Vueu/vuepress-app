@@ -27,4 +27,4 @@ git push -f git@gitee.com:Aavin/Aavin.gitee.io.git master
 git push -f git@github.com:Vueu/Vueu.github.io.git master
 
 # 删除dist
-cd ../ && rm -rf dist
+# cd ../ && rm -rf dist

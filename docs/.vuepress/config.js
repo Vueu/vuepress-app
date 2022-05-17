@@ -12,19 +12,19 @@ module.exports = {
   // dest: "public",
   noFoundPageByTencent: false,
   head: [
-    
     // 配置PWA
-    ['link', { rel: 'icon', href: '/egg.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/egg.png' }],
-    ['link', { rel: 'mask-icon', href: '/bg.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/egg.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
-
-
+    ["link", { rel: "icon", href: "/egg.png" }],
+    ["link", { rel: "manifest", href: "/manifest.json" }],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
+    ["link", { rel: "apple-touch-icon", href: "/egg.png" }],
+    ["link", { rel: "mask-icon", href: "/bg.svg", color: "#3eaf7c" }],
+    ["meta", { name: "msapplication-TileImage", content: "/egg.png" }],
+    ["meta", { name: "msapplication-TileColor", content: "#000000" }],
 
     [
       "meta",
@@ -135,15 +135,12 @@ module.exports = {
      */
     friendLink: [
       {
-        title: "午后南杂",
-        desc: "Enjoy when you can, and endure when you must.",
-        link: "https://www.recoluan.com",
+        title: "知乎",
+        link: "https://www.zhihu.com",
       },
       {
-        title: "Torrk's Blog",
-        desc: "记录，成为更好的自己。",
-        logo: "https://conimi.com/files/images/i.jpg",
-        link: "https://conimi.com",
+        title: "牛客",
+        link: "https://www.nowcoder.com",
       },
     ],
 
@@ -188,9 +185,9 @@ module.exports = {
         transformer: (timestamp, lang) => {
           // return new Date(timestamp).toUTCString();
           //或者用下面这段
-          const moment = require('moment')
-          moment.locale(lang)
-          return moment(timestamp).toLocaleString()
+          const moment = require("moment");
+          moment.locale(lang);
+          return moment(timestamp).toLocaleString();
         },
       },
     ],
@@ -218,27 +215,27 @@ module.exports = {
       },
     ],
 
-    // 音乐播放器
-    [
-      "@vuepress-reco/vuepress-plugin-bgm-player",
-      {
-        audios: [
-          {
-            name: "LOSER",
-            artist: "米津玄師",
-            url: "https://www.ytmp3.cn/down/73654.mp3",
-            cover:
-              "https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200",
-          },
-        ],
-        // 是否默认缩小
-        autoShrink: true,
-        // 缩小时缩为哪种模式
-        shrinkMode: "float",
-        // 悬浮窗样式
-        floatStyle: { bottom: "10px", "z-index": "999999" },
-      },
-    ],
+    // 音乐播放器，离线情况下不能访问音乐url，去除插件
+    // [
+    //   "@vuepress-reco/vuepress-plugin-bgm-player",
+    //   {
+    //     audios: [
+    //       {
+    //         name: "LOSER",
+    //         artist: "米津玄師",
+    //         url: "https://www.ytmp3.cn/down/73654.mp3",
+    //         cover:
+    //           "https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200",
+    //       },
+    //     ],
+    //     // 是否默认缩小
+    //     autoShrink: true,
+    //     // 缩小时缩为哪种模式
+    //     shrinkMode: "float",
+    //     // 悬浮窗样式
+    //     floatStyle: { bottom: "10px", "z-index": "999999" },
+    //   },
+    // ],
 
     // 名言名句  在md插入<Boxx/>即可
     ["vuepress-plugin-boxx"],
@@ -260,7 +257,7 @@ module.exports = {
           {
             type: "text",
             content:
-              "🎉🎉🎉 Test! Tess! Test! 在下的博客基于 vuepress 框架和 vuepress-theme-reco 主题 1.x 搭建，托管在 Github pages（学生dog），所以会有些慢，请见谅！"
+              "🎉🎉🎉在下的博客基于 vuepress 框架和 vuepress-theme-reco 主题 1.x 搭建，托管在 Github pages（学生dog），所以会有些慢，请见谅！👉👉👉也可以下载离线版，速度更快，启动更方便，点击地址栏的下载按钮即可下载！🤞🤞🤞",
           },
         ],
         footer: [
