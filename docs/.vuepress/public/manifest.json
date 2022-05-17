@@ -1,0 +1,21 @@
+{
+  "name": "学习文档",
+  "short_name": "studyDocs",
+  "display": "standalone",
+  "background_color": "#fff",
+  "start_url": "/",
+  "scope": ".",
+  "description": "学习文档 笔记文档 面试笔记",
+  "icons": [
+    {
+      "src": "egg.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "egg.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}

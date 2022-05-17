@@ -12,7 +12,20 @@ module.exports = {
   // dest: "public",
   noFoundPageByTencent: false,
   head: [
-    ["link", { rel: "icon", href: "/egg.png" }],
+    
+    // 配置PWA
+    ['link', { rel: 'icon', href: '/egg.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/egg.png' }],
+    ['link', { rel: 'mask-icon', href: '/bg.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/egg.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+
+
+
     [
       "meta",
       {
@@ -69,7 +82,7 @@ module.exports = {
       { text: "留言", link: "/pages/msg", icon: "reco-suggestion" },
       {
         text: "Github",
-        link: "https://github.com/Aaving",
+        link: "https://github.com/Vueu/vuepress-app",
         icon: "reco-github",
       },
 
@@ -88,7 +101,7 @@ module.exports = {
         text: "标签", // 默认 “标签”
       },
       socialLinks: [
-        { icon: "reco-github", link: "https://github.com/Aaving" },
+        { icon: "reco-github", link: "https://github.com/Vueu" },
         {
           icon: "reco-zhihu",
           link: "https://www.zhihu.com/people/zhong-guo-80-2",
@@ -148,17 +161,17 @@ module.exports = {
      */
   },
   plugins: [
-    // 更新刷新插件
-    // [
-    //   "@vuepress/pwa",
-    //   {
-    //     serviceWorker: true,
-    //     updatePopup: {
-    //       message: "发现新内容可用",
-    //       buttonText: "刷新",
-    //     },
-    //   },
-    // ],
+    // 用pwa生成桌面应用，更新刷新插件
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用",
+          buttonText: "刷新",
+        },
+      },
+    ],
     // 代码复制弹窗插件
     [
       "vuepress-plugin-nuggets-style-copy",
@@ -247,7 +260,7 @@ module.exports = {
           {
             type: "text",
             content:
-              "🎉🎉🎉 Test! Tess! Test!🎉🎉🎉 reco 主题 2.x 已经发布 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了",
+              "🎉🎉🎉 Test! Tess! Test! 在下的博客基于 vuepress 框架和 vuepress-theme-reco 主题 1.x 搭建，托管在 Github pages（学生dog），所以会有些慢，请见谅！"
           },
         ],
         footer: [
