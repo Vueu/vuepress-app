@@ -1,4 +1,3 @@
-<!-- 首页yaml配置 -->
 ---
 home: true
 heroImage: /egg.png
@@ -8,3 +7,4 @@ actionText: Go >>>
 actionLink: /pages/test1.md
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
+<!-- 首页yaml配置 -->
