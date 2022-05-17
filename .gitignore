@@ -1,2 +1,3 @@
+# git push时忽略该脚本下的所有项目文件
 
 node_modules

@@ -26,4 +26,5 @@ git commit -m 'deploy'
 git push -f git@gitee.com:Aavin/Aavin.gitee.io.git master
 git push -f git@github.com:Vueu/Vueu.github.io.git master
 
-cd -
+# 删除dist
+cd ../ && rm -rf dist
